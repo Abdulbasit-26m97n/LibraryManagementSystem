@@ -64,8 +64,4 @@ Use `/api/auth/login` with valid credentials to get a JWT token.
 5. **Create a Pull Request**  
 
 ## **📜 License**  
-This project is open-source under the **MIT License**.  
-
----
-
-This `README.md` gives a clear overview of your project. Let me know if you need changes! 🚀🔥
+This project is open-source under the **MIT License**.
