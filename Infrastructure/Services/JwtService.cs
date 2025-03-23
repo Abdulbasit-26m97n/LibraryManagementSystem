@@ -32,7 +32,7 @@ namespace Infrastructure.Services
                 issuer: configuration["AppSettings:Issuer"],
                 audience: configuration["AppSettings:Audience"],
                 claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(10),
+                expires: DateTime.UtcNow.AddMinutes(1),
                 signingCredentials: creds
                 );
 
@@ -47,7 +47,7 @@ namespace Infrastructure.Services
             rng.GetBytes(randomNumber);
             var refreshToken = Convert.ToBase64String(randomNumber);
             user.RefreshToken = refreshToken;
-            user.RefreshTokenExpiry = DateTime.UtcNow.AddMinutes(10);
+            user.RefreshTokenExpiry = DateTime.UtcNow.AddMinutes(1);
             return refreshToken;
         }
     }
