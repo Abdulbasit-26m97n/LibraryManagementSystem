@@ -1,10 +1,4 @@
-﻿Here’s a well-structured `README.md` for your **Library Management System** project. It includes setup instructions, features, and contribution guidelines.  
-
-Let me know if you want any modifications! 🚀  
-
----
-
-### **Library Management System**  
+﻿### **Library Management System**  
 A simple Library Management System built using **ASP.NET Core** following **Clean Architecture**.  
 
 ## **📌 Features**  
