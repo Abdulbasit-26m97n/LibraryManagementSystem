@@ -1,37 +1,77 @@
-﻿Here’s how you can add the `README.md` file in **Visual Studio** and push it to **GitHub** step by step:
+﻿Here’s a well-structured `README.md` for your **Library Management System** project. It includes setup instructions, features, and contribution guidelines.  
+
+Let me know if you want any modifications! 🚀  
 
 ---
 
-## **📌 Steps to Add `README.md` in Visual Studio and Push to GitHub**
+### **Library Management System**  
+A simple Library Management System built using **ASP.NET Core** following **Clean Architecture**.  
 
-### **1️⃣ Open Your Project in Visual Studio**  
-- Launch **Visual Studio**  
-- Open your **Library Management System** solution  
+## **📌 Features**  
+✅ JWT-based Authentication & Authorization  
+✅ Manage Books (Add, Edit, Delete, View)  
+✅ Manage Users & Borrowing Records  
+✅ Role-based Access Control  
+✅ SQL Server Database with Entity Framework Core  
+✅ Clean Architecture Implementation  
 
-### **2️⃣ Add `README.md` File**  
-- In **Solution Explorer**, right-click on the **solution** (or root folder).  
-- Click **Add > New Item**  
-- Select **Text File**, name it `README.md`, and click **Add**  
-- Copy and paste the **README.md content** I provided above.  
-- Save the file (`Ctrl + S`).
+## **🛠️ Technologies Used**  
+- **Backend**: ASP.NET Core Web API, Entity Framework Core  
+- **Database**: SQL Server  
+- **Frontend**: (To be integrated, React planned)  
+- **Architecture**: Clean Architecture (Core, Application, Infrastructure, API)  
 
-### **3️⃣ Commit the Changes in Visual Studio**  
-- Open **Git Changes** in Visual Studio (`View > Git Changes`)  
-- You should see `README.md` listed under **Changes**  
-- Add a commit message:  
-  ```
-  Added README.md file
-  ```
-- Click **Commit** (This saves changes locally in Git).
+## **🚀 Getting Started**  
 
-### **4️⃣ Push to GitHub**  
-- In **Git Changes**, click the **Push** button  
-- This will upload the `README.md` file to your GitHub repository.  
+### **1️⃣ Clone the Repository**  
+```sh
+git clone https://github.com/Abdulbasit-26m97n/LibraryManagementSystem.git
+cd LibraryManagementSystem
+```
 
-### **5️⃣ Verify on GitHub**  
-- Go to your GitHub repo: [https://github.com/Abdulbasit-26m97n/LibraryManagementSystem](https://github.com/Abdulbasit-26m97n/LibraryManagementSystem)  
-- You should now see `README.md` in the repository root.  
+### **2️⃣ Configure the Database**  
+- Open `appsettings.json` and update the **connection string**:  
+```json
+"ConnectionStrings": {
+  "DefaultConnection": "Server=YOUR_SERVER;Database=LibraryDB;Trusted_Connection=True;"
+}
+```
+- Run migrations to set up the database:  
+```sh
+dotnet ef database update
+```
+
+### **3️⃣ Run the Application**  
+```sh
+dotnet run --project API
+```
+The API will be available at: `http://localhost:5000/`  
+
+### **4️⃣ Generate JWT Token**  
+Use `/api/auth/login` with valid credentials to get a JWT token.  
+
+## **📚 API Endpoints**  
+
+| Endpoint                 | Method | Description              | Authentication |
+|--------------------------|--------|--------------------------|---------------|
+| `/api/auth/register`     | POST   | Register a new user      | ❌ No         |
+| `/api/auth/login`        | POST   | Login & get JWT token   | ❌ No         |
+| `/api/books`             | GET    | Get all books           | ✅ Yes        |
+| `/api/books/{id}`        | GET    | Get book details        | ✅ Yes        |
+| `/api/books`             | POST   | Add a new book          | ✅ Yes (Admin) |
+| `/api/books/{id}`        | PUT    | Update book details     | ✅ Yes (Admin) |
+| `/api/books/{id}`        | DELETE | Delete a book           | ✅ Yes (Admin) |
+
+## **🔧 Contributing**  
+1. **Fork** the repo  
+2. **Create a branch** (`feature/new-feature`)  
+3. **Commit your changes** (`git commit -m "Added new feature"`)  
+4. **Push** to GitHub (`git push origin feature/new-feature`)  
+5. **Create a Pull Request**  
+
+## **📜 License**  
+This project is open-source under the **MIT License**.  
 
 ---
 
-🎉 **Done!** Now your repository will display the `README.md` file on the GitHub home page. Let me know if you need any help! 🚀🔥
+This `README.md` gives a clear overview of your project. Let me know if you need changes! 🚀🔥
