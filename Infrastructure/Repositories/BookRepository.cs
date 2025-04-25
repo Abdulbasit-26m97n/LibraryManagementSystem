@@ -1,6 +1,6 @@
-﻿using Core;
-using Core.Common;
+﻿using Core.Common;
 using Core.Entities;
+using Core.Enums;
 using Core.Interfaces.Repositories;
 using Infrastructure.Data;
 using Microsoft.Data.SqlClient;

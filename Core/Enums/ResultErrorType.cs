@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core
+namespace Core.Enums
 {
     /// <summary>
     /// Defines error types that can occur in the application, particularly in API responses and EF Core operations.

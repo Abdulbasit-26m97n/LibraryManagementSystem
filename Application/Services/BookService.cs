@@ -1,7 +1,7 @@
-﻿using Core;
-using Core.Common;
+﻿using Core.Common;
 using Core.DTOs;
 using Core.Entities;
+using Core.Enums;
 using Core.Interfaces.Repositories;
 using Core.Interfaces.Services;
 using System;

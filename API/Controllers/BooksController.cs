@@ -1,6 +1,6 @@
-﻿using Core;
-using Core.DTOs;
+﻿using Core.DTOs;
 using Core.Entities;
+using Core.Enums;
 using Core.Interfaces.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
